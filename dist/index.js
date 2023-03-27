@@ -3707,7 +3707,7 @@ exports.FTPSyncProvider = FTPSyncProvider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ErrorCode = exports.syncFileDescription = exports.currentSyncFileVersion = void 0;
-exports.currentSyncFileVersion = "9.0.0";
+exports.currentSyncFileVersion = process.env.PROJECT_VERSION || "1.0.0";
 exports.syncFileDescription = "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action";
 var ErrorCode;
 (function (ErrorCode) {
